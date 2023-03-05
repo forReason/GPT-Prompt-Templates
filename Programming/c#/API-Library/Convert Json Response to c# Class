@@ -1,0 +1,19 @@
+Create a c# class according to the following JSON server response:
+- include xml comments [yes]
+- include functions to serialize/deserialize the response to string [no]
+- include functions to save/load the json to disk with the extension ".response" [no]
+- IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
+- dont include `[JsonProperties]` as I am working with System.Text.Json
+- if applicable use the classname from the original Documentation in [PascalCase] format
+- Class Name Suffix: [_Response]
+- Class naming example: [MyClass_Response : ResponseTemplate<MyClass_Response>]
+
+Here is some further documentation about the server response (optional):
+```
+{Optional}
+```
+
+This is the original JSON response to serialize/deserialize:
+```
+{Mandatory}
+```
