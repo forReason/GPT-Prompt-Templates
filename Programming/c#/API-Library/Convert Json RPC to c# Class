@@ -1,12 +1,14 @@
 Create a c# class according to the following JSON RPC:
-- include xml comments [yes]
-- include functions to serialize/deserialize the response to string [no]
-- include functions to save/load the json to disk with the extension ".response" [no]
+- Include xml comments [yes]
+- Include functions to serialize/deserialize the response to string [no]
+- Include functions to save/load the json to disk with the extension ".response" [no]
 - IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
-- dont include `[JsonProperties]` as I am working with System.Text.Json
-- if applicable use the classname from the original Documentation in [PascalCase] format
+- Dont include `[JsonProperties]` as I am working with System.Text.Json
+- If applicable use the classname from the original Documentation in [PascalCase] format
 - Class Name Suffix: [_RPC]
-- Class naming example: [MyClass_RPC : RPCTemplate<MyClass_RPC>]
+- The Class is a derivate of RPCTemplate: [MyClass_RPC : RPCTemplate<MyClass_RPC>]
+- Lists should be implemented as arrays
+- Positive integers are likely of type ulong
 
 Here is some further documentation about the RPC (optional):
 ```
