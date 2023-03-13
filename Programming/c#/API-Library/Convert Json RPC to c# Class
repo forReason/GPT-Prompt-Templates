@@ -1,15 +1,15 @@
-Create a c# class in order to serialize deserialize an rpc request json:
+Create a c# class in order to serialize deserialize a json rpc request:
 - Include xml comments [yes]
 - Include functions to serialize/deserialize the response to string [no]
 - Include functions to save/load the json to disk with the extension ".response" [no]
 - IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
 - Exclude attributes as I am working with System.Text.Json
-- If applicable use the classname from the original Documentation in [PascalCase] format
-- Class Name Suffix: [_RPC]
+- Use the class name from the Documentation in [PascalCase] format with [_RPC] suffix eg `MyClass_RPC`
 - The Class is a derivate of RPCTemplate: [MyClass_RPC : RPCTemplate<MyClass_RPC>]
 - Lists should be implemented as arrays
 - Positive integers are likely of type ulong
 - The base class is already present, omit it from your response
+- optional properties should be marked as nullable
 
 Here is some further documentation about the RPC (optional):
 ```
