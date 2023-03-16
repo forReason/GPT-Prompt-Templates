@@ -1,15 +1,18 @@
 Create a c# class in order to serialize deserialize a json rpc request:
-- Include xml comments [yes]
-- Include functions to serialize/deserialize the response to string [no]
-- Include functions to save/load the json to disk with the extension ".response" [no]
-- IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
-- Exclude attributes as I am working with System.Text.Json
-- Use the class name from the Documentation in [PascalCase] format with [_RPC] suffix eg `MyClass_RPC`
+- Include xml comments? [yes]
+- Include functions to serialize/deserialize the response to string? [no]
+- Include functions to serialize/deserialize the response to string? [no]
+- Include functions to save/load the json to disk with the extension ".response"? [no]
+- IMPORTANT: properties inside the class should be named with [snake_case], eg `used_for_farmer_rewards`
+- The class itself should be named in [PascalCase] format with [_RPC] suffix eg `MyClass_RPC`
+- Exclude attributes such as [JsonPropertyName("wallet_id")] because I am working with System.Text.Json
 - The Class is a derivate of RPCTemplate: [MyClass_RPC : RPCTemplate<MyClass_RPC>]
-- Lists should be implemented as arrays
-- Positive integers are likely of type ulong
+- Lists should be implemented as arrays? [yes]
+- Positive integers are likely of type: [ulong]
+- Exclude the follwing properties, as they are already part of the Baseclass: [success],[error]
+- Exclude the follwing functions, as they are already part of the Baseclass: [serialize],[deserialize],[ToString]
 - The base class is already present, omit it from your response
-- optional properties should be marked as nullable
+- Optional properties should be marked as nullable
 
 Here is some further documentation about the RPC (optional):
 ```

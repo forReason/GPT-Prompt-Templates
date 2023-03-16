@@ -1,14 +1,16 @@
 Create a c# class in order to serialize deserialize a json server response:
-- Include xml comments [yes]
-- Include functions to serialize/deserialize the response to string [no]
-- Include functions to save/load the json to disk with the extension ".response" [no]
-- IMPORTANT: property naming convention: [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
-- Exclude attributes as I am working with System.Text.Json
-- Use the class name from the Documentation in [PascalCase] format with [_Response] suffix eg `MyClass_Response`
+- Include xml comments? [yes]
+- Include constructors? [no]
+- Include functions to serialize/deserialize the response to string? [no]
+- Include functions to save/load the json to disk with the extension ".response"? [no]
+- IMPORTANT: properties inside the class should be named with [snake_case], eg `used_for_farmer_rewards`
+- The class itself should be named in [PascalCase] format with [_Response] suffix eg `MyClass_Response`
+- Exclude attributes such as [JsonPropertyName("wallet_id")] because I am working with System.Text.Json. The properties names should match the json *exactly*
 - The class is a derivate of ResponseTemplate: [MyClass_Response : ResponseTemplate<MyClass_Response>]
-- Lists should be implemented as arrays
-- Positive integers are likely of type ulong
+- Lists should be implemented as arrays? [yes]
+- Positive integers are likely of type: [ulong]
 - Exclude the follwing properties, as they are already part of the Baseclass: [success],[error]
+- Exclude the follwing functions, as they are already part of the Baseclass: [serialize],[deserialize]
 - The base class is already present, omit it from your response
 - Optional properties should be marked as nullable
 
