@@ -2,7 +2,7 @@ Create a c# class in order to serialize deserialize a json server response:
 - Include xml comments [yes]
 - Include functions to serialize/deserialize the response to string [no]
 - Include functions to save/load the json to disk with the extension ".response" [no]
-- IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
+- IMPORTANT: property naming convention: [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
 - Exclude attributes as I am working with System.Text.Json
 - Use the class name from the Documentation in [PascalCase] format with [_Response] suffix eg `MyClass_Response`
 - The class is a derivate of ResponseTemplate: [MyClass_Response : ResponseTemplate<MyClass_Response>]
