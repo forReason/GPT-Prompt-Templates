@@ -1,0 +1,68 @@
+# Game Information
+
+| Game Information | Details |
+| --- | --- |
+| Map | `Unknown` |
+| Discovered | `Unknown` |
+| Game Time | `Unknown` |
+| Players | You: `[Your Nation]` vs `[Enemy Nation]` |
+| ELO Rating | You: `[Your Elo Rating]` vs `[Enemy Elo Rating]` |
+
+# Resource Locations
+
+| Resource Locations | Location | Villagers Assigned | Remaining Amount | Gathering Rate |
+| --- | --- | --- | --- | --- |
+| `Unknown`  | `Unknown` | `Unknown` | `Unknown` | `Unknown` |
+
+# You
+
+| General Information | Details |
+| --- | --- |
+| Population | Current: `Unknown`, Maximum: `Unknown` |
+| Age/Era | Current Age: `Unknown` |
+
+## Stockpile of Resources
+
+| Resource | Amount | Collection Rate |
+| --- | --- | --- |
+| Wood | `Unknown` | `Unknown` |
+| Food | `Unknown` | `Unknown` |
+| Gold | `Unknown` | `Unknown` |
+| Stone | `Unknown` | `Unknown` |
+
+## Buildings
+{buildings without functionality like houses can be grouped}
+| Building | Location | Health | Queue |
+| --- | --- | --- | --- |
+| Town Center | `Unknown` | `Unknown` | `Unknown` (`building.queue[0].duration`) |
+| [Other Building] | `Unknown` | `Unknown` | `Unknown` (`building.queue[0].duration`) |
+
+## Owned Units
+
+| Owned Units | Type | Quantity | State |
+| --- | --- | --- | --- |
+| Villagers | `Unknown` | `Unknown` | `Unknown` |
+| Scouts | `Unknown` | `Unknown` | `Unknown` |
+| [Other Unit] | `Unknown` | `Unknown` | `Unknown` |
+
+# Enemy
+
+| General Information | Details |
+| --- | --- |
+| Population | Current: `Unknown`, Maximum: `Unknown` |
+| Age/Era | Current Age: `Unknown` |
+
+## Enemy Buildings
+
+| Enemy Buildings | Location | Health | Queue |
+| --- | --- | --- | --- |
+| Town Center | `Unknown` | `Unknown` | `Unknown` |
+| [Other Building] | `Unknown` | `Unknown` | `Unknown` |
+
+## Enemy Units
+
+| Enemy Units | Type | Quantity | State |
+| --- | --- | --- | --- |
+| Villagers | `Unknown` | `Unknown` | `Unknown` |
+| Scouts | `Unknown` | `Unknown` | `Unknown` |
+| [Other Unit] | `Unknown` | `Unknown` | `Unknown` |
