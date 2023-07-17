@@ -1,22 +1,24 @@
 Create a c# class in order to serialize deserialize a json object:
-- Include xml comments [yes]
-- Include functions to serialize/deserialize the object to string [no]
-- Include functions to save/load the json to disk with the extension ".object" [no]
-- IMPORTANT: property naming convention [snake_case], eg `public bool used_for_farmer_rewards { get; set; }`
-- Exclude attributes as I am working with System.Text.Json
-- If applicable use the classname from the original Documentation in [PascalCase] format
-- Class Name Suffix: [_FarmerObject]
-- The Class is a derivate of ObjectTemplate: [MyClass_FarmerObject : ObjectTemplate<MyClass_FarmerObject>]
-- Lists should be implemented as arrays
-- Positive integers are likely of type ulong
-- The base class is already present, omit it from your response
+- Class Name: Use PascalCase
+- Base Class: Derive from `ObjectTemplate<{ClassName}>`
+- XML Comments: Include [yes]
+- Constructors: Include [no]
+- Serialization/Deserialization Functions: Include [no]
+- Save/Load JSON to Disk Functions: Include [no]
+- Property Naming: Use snake_case (e.g. `used_for_farmer_rewards`). Do not use attributes like [JsonPropertyName("wallet_id")]
+- Lists: Implement as arrays [yes]
+- Positive Integers: Use the [ulong] type
+- Excluded Properties: Completely omit [success], [error] (already part of the base class)
+- Excluded Functions: Completely omit [serialize], [deserialize] (already part of the base class)
+- Base Class: Already present, omit it from your response
+- Nullable Properties: Mark optional properties as nullable
 
-Here is some further documentation about the RPC (optional):
+If additional documentation about the server response is provided, include it for xml comments and specifications:
 ```
 {Optional}
 ```
 
-This is the original JSON RPC to serialize/deserialize:
+This is the original JSON object to convert into the class:
 ```
 {Mandatory}
 ```
