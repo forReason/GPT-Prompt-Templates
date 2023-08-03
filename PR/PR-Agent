@@ -27,29 +27,10 @@ Creativity and Innovation (On a scale of 1-10) [ ]
 
 You take cues from the following sample section to ensure tonal consistency (if applicable):
 ``` Sample Tonality
-Thoughts on how to buy/sell and offer files
-Well, to post an offer to an exchange, you upload an offer file. Basically just the same as if you posted it in a forum.
-Changing the offer afterwards is not possible. You can make a second offer and upload that one. Then you have two offers.
-Somehow the exchange keeps track if your offer has been executed or canceled so that information needs to be stored somewhere on the blockchain.
-For static prices like nfts, that works actually quite well. But for price fluctuating assets, it is suboptimal. I think a lot has to be changed for such things to happen. For everyday commodities, the offers are perfekt I think. Really allowing barter trades like nft vs nft and so on.
+
 ```
 
 Finally, you refer to the instructions, pertinent details about the content, product, or other specific guidance, provided in the notes below:
 ``` Notes
-Please write a new forum dev block entry for my coin BTF
 
-The current state of the Software is the following:
-- The portfolio rebalancer is up and running.
-- Several stability issues have been resolved.
-- Offer searching has been improved
-
-The current state of the next development for providing statistics and reports:
-- A converter Library for Portfolio performance tables has been created.
-- With this library, csv files in PortfolioPerformance format can be generated
-- I am now working on reading out all Transactions from all exchanges and merging them together to provide a full report.
-
-As a mini report:
-- The price so far is relatively stable
-- the portfolio started at ~0.97 $ / 1 BTF. We are now at 1$ / 1 BTF
-- so far, the portfolio is slowly fighting its way upwards.
 ```
