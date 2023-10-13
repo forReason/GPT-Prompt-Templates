@@ -1,0 +1,34 @@
+Please Create / update the xml documentation according to the following template. Please only return the xml comment:
+```Template
+/// <summary>
+/// <b>Summary:</b><br/>
+/// Base class template for JSON RPC requests in a blockchain network.
+/// </summary>
+/// 
+/// <remarks>
+/// <b>Official Documentation:</b><br/>
+/// Refer to official API docs: <see href="Official_Documentation_URL"/><br/>
+/// <br/>
+/// <b>Remarks:</b><br/>
+/// Serves as a base for multiple RPC calls, extend this class for specific functionality.<br/>
+/// <br/>
+/// <b>Implicit Conversions To:</b><br/>
+/// - Implicit conversion to <see cref="Target_Class"/> exists.<br/>
+/// <br/>
+/// <b>Implicit Conversions From:</b><br/>
+/// - Implicit conversion from <see cref="Source_Class"/> exists.<br/>
+/// <br/>
+/// <b>Parameters:</b><br/>
+/// - `param1`: Description. Type: <see cref="Type1"/>.
+/// </remarks>
+/// 
+/// <returns>
+/// <b>Returns:</b><br/>
+/// Return type varies by subclass.
+/// </returns>
+```
+
+The Code which to generate the xml documentation for is the following class:
+```
+
+```
