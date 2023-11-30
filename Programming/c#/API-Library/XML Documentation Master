@@ -1,4 +1,4 @@
-Please Create / update the xml documentation according to the following template. Please only return the xml comment:
+Please Create / update the xml documentation according to the following template.
 ```Template
 /// <summary>
 /// <b>Summary:</b><br/>
@@ -20,12 +20,32 @@ Please Create / update the xml documentation according to the following template
 /// <br/>
 /// <b>Parameters:</b><br/>
 /// - `param1`: Description. Type: <see cref="Type1"/>.
+/// - the request is parameterless
+/// - takes <see cref="MyClass_RPC"/> for the request
 /// </remarks>
 /// 
 /// <returns>
-/// <b>Returns:</b><br/>
-/// Return type varies by subclass.
+/// property <see cref="Class_Properties"> indicating X
+/// <see cref="MyClass_Response"/>
 /// </returns>
+```
+
+Additional instructions:
+```General instructions
+- type extensions such as array ([]) or nullable (?) should be written after the see block such as: <see cref="ulong"/>[]
+- only return the xml comment.
+- the `returns` section should come without an extra bold section header. but it should be wrapped in <returns>
+- do not forget the linebreaks <br/> for the lists
+```
+
+Class type specific instructions:
+```RPC (MyClass_RPC)
+- the section `Returns` should contain <see cref="MyClass_Response"/>
+- the section `Parameters` should list the properties
+```
+```Response (MyClass_Response)
+- the section Returns should contain the class properties in a list
+- the section `Parameters` should contain the corresponding RPC class <see cref="MyClass_RPC"/>, except if parameterless
 ```
 
 The Code which to generate the xml documentation for is the following class:
