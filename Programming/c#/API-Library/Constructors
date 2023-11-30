@@ -1,0 +1,34 @@
+Please generate constructors according to the following Template:
+```
+public class NftAddURI_RPC : RPCTemplate<NftAddURI_RPC>
+{
+    /// <summary>
+    /// parameterless constructor, for serializer
+    /// </summary>
+    public NftAddURI_RPC() { /* for serialisation */ }
+    /// <summary>
+    /// Add a new URI to the location URI list
+    /// </summary>
+    /// <param name="wallet_id">The Wallet ID of the DID wallet to transfer</param>
+    /// <param name="nft_coin_id">The coin ID of the NFT on which to add a URI</param>
+    /// <param name="key">Key must be either "u" (data URI), "mu" (metadata URI), or "lu" (license URI)</param>
+    /// <param name="uri">The URI to add</param>
+    /// <param name="fee">The one-time blockchain fee (in mojos) to be used upon adding a URI</param>
+    /// <param name="reuse_puzhash">If true, will not generate a new puzzle hash / address for this transaction only. </param>
+    public NftAddURI_RPC(ulong wallet_id, string nft_coin_id, string key, string uri, ulong? fee = null, bool? reuse_puzhash = null)
+    {
+        this.wallet_id = wallet_id;
+        this.nft_coin_id = nft_coin_id;
+        this.key = key;
+        this.uri = uri;
+        this.fee = fee;
+        this.reuse_puzhash = reuse_puzhash;
+    }
+    // properties ...
+}
+```
+
+for the followind class:
+```
+
+```
