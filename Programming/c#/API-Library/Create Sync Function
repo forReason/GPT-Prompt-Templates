@@ -1,6 +1,11 @@
 please create sync functions for my async functions according to the template:
 ```
-
+public Myfunction_Response? MyFunction_Sync()
+{
+    Task<Myfunction_Response?> data = Task.Run(() => MyFunction_Async());
+    data.Wait();
+    return data.Result;
+}
 ```
 
 These are my async functions for which you should create the sync functions:
