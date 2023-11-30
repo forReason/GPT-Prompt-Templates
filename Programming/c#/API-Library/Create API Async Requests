@@ -1,0 +1,37 @@
+Create Async API requests according to the following Templates:
+If the request does have a return and parameters
+``` request with Parameters
+/// <summary>
+/// Add a new private key from a mnemonic word list
+/// </summary>
+/// <remarks><see href="https://docs.chia.net/daemon-rpc#add_private_key"/></remarks>
+/// <returns><see cref="FingerPrint_Response"/></returns>
+public async Task<FingerPrint_Response?> AddPrivateKey_Async(AddPrivateKey_RPC rpc)
+{
+    string responseJson = await SendCustomMessage_Async("add_private_key", rpc.ToString());
+    FingerPrint_Response? deserializedObject = FingerPrint_Response.LoadResponseFromString(responseJson);
+    return deserializedObject;
+}
+```
+If the request does not have parameters and returns nothing:
+``` request without parameters
+/// <summary>
+/// Delete all keys
+/// </summary>
+/// <remarks><see href="https://docs.chia.net/daemon-rpc#delete_all_keys"/></remarks>
+/// <returns><see cref="Success_Response"/></returns>
+public async Task<Success_Response?> DeleteAllKeys_Async()
+{
+    string responseJson = await SendCustomMessage_Async("delete_all_keys");
+    Success_Response? deserializedObject = Success_Response.LoadResponseFromString(responseJson);
+    return deserializedObject;
+}
+```
+
+Further Instructions
+- endpoints may have parameters but no return. Endpoints may have no parameters but a return. Mix both templates accordingly.
+
+This is the documentation which you should derive the api calls from:
+```
+
+```
