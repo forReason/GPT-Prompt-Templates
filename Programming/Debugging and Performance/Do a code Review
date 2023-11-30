@@ -1,0 +1,15 @@
+Please do a Code review on the following Code. Perform the following checks at least:
+- Typos
+- Logic errors
+- Performance Bottlenecks
+- Clarity of Names
+- Possible restructurings and refactorings
+- Error handling
+- Code documentation through inline comments and xml comments
+
+Please supply a list with possible changes which can be selected for you to apply
+
+This is the code to review:
+```
+
+```
